@@ -1,0 +1,28 @@
+{
+  "name": "asm-typescript",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "nodemon --inspect ./bin/www"
+  },
+  "dependencies": {
+    "bcrypt": "^5.1.0",
+    "cookie-parser": "~1.4.4",
+    "debug": "~2.6.9",
+    "ejs": "~2.6.1",
+    "express": "~4.16.1",
+    "express-session": "^1.17.3",
+    "http-errors": "~1.6.3",
+    "morgan": "~1.9.1",
+    "multer": "^1.4.5-lts.1",
+    "mysql": "^2.18.1",
+    "nodemailer": "^6.9.1",
+    "ts-node": "^10.9.1",
+    "tsc": "^2.0.4",
+    "typescript": "^5.0.3"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.21",
+    "ts-loader": "^9.4.2"
+  }
+}

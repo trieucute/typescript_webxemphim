@@ -1,0 +1,72 @@
+<!-- <script>
+    var exports = {"__esModule": true}
+</script> -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <div id="content"></div>
+    <div id="products-all"></div>
+
+</body>
+</html>
+
+
+<script type="module" src="/js/product.js"></script>
+
+<!-- <script>
+       window.fetch("http://localhost:3000/product/")  
+ .then(function(res) {
+     if(!res.ok) {throw new Error("Lỗi = " + res.status); }
+     return res.json();
+ })
+ .then(function(data) {
+    
+     let specialpro= document.getElementById('content');
+    
+     data.forEach(item => {
+        
+        
+
+            specialpro.innerHTML+=`<div class="content-row-product"  >
+                                <input type="hidden" value="${item.id_pro}" id="idpro">
+                                <a href="/shop/product/${item.id_pro}" class="img-product"  id="proid">
+                                    <img src="/images/${ item.image }" alt="">
+                                </a>
+                                <span class="onsale">${item.views}%</span>
+                                <div class="star-rating-block">
+                                    <div class="star-rating">
+                                        <i class="fa-solid fa-star" style="color:#F3B402;"></i>
+                                                <i class="fa-solid fa-star" style="color:#F3B402;"></i>
+                                                <i class="fa-solid fa-star" style="color:#F3B402;"></i>
+                                                
+                                              
+                                        
+                                        
+                                        
+                                    </div>
+                                </div>
+                                <h3 class="product-name">
+                                    <a href="/shop/product/${item.id_pro}"  id="proid">${item.name_pro }</a>
+                                </h3>
+                                <div class="poduct-price">
+                                <del><span>$</span>${item.views}</del>
+                        
+                                <ins><span>$</span>${item.actor}</ins>
+                                </div>
+                                </div>`
+        
+
+         
+     });
+     
+     console.log(data);
+ })
+ .catch(function(error)  { console.log("Lỗi: ", error);})
+</script> -->

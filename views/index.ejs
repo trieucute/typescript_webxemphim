@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WEB FILMS</title>
+    <link rel="stylesheet" href="/css/index.css">
+    <!-- <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/bootstrap.css"> -->
+
+    <link rel="stylesheet" href="/font/fontawesome/fontawesome-free-6.1.1-web/css/all.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,300;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container-all">
+        <%- include('partials/header') -%>
+        
+       
+            <div class="slide-show">
+                <div class="overplay"></div>
+                <div class="slide-content active">
+               
+                    <img src="/images/slider1.jpg" alt="">
+                    <div class="slide-text ">
+                        <div class="text-content-slide">
+                        <div class="channel-logo  slider-text"><a href=""><img src="/images/logo.png" alt=""></a></div>
+                        <div class="big-title"><h1> SKY LIN 3S</h1></div>
+                        <div class="text-top slider-text "><span class="badge">13+</span><span class="ml-3">114m</span></div>
+                        <div class="text-mid  slider-text">
+                           
+                            <p> The War of Destruction is a continuation of Part 2 The Sky of Doom, set 5 years after the battle against the aliens that invaded the earth in part 2.</p>
+                        </div>
+                        <div class="elementor-button-wrapper  slider-text" style="padding: 30px 0 ;">
+                            <div class="btn-playnow"><a href="" class="hover"><span><i class="fa-solid fa-play"></i> Play now</span></a></div>
+                            <a href="" class="elementor-button-link">
+                                <span>More details</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                </div>
+                <div class="slide-content ">
+
+                    <img src="/images/slider2.jpg" alt="">
+                    <div class="slide-text ">
+                        <div class="text-content-slide">
+                        <div class="channel-logo  slider-text"><a href=""><img src="/images/logo.png" alt=""></a></div>
+                        <div class="big-title"><h1> TITANIC</h1></div>
+                        <div class="text-top slider-text "><span class="badge">16+</span><span class="ml-3">195m</span></div>
+                        <div class="text-mid  slider-text">
+                           
+                            <p>A seventeen-year-old aristocrat falls in love with a kind but poor artist aboard the luxurious, ill-fated R.M.S. Titanic.</p>
+                        </div>
+                        <div class="elementor-button-wrapper  slider-text" style="padding: 30px 0 ;">
+                            <div class="btn-playnow"><a href="" class="hover"><span><i class="fa-solid fa-play"></i> Play now</span></a></div>
+                            <a href="" class="elementor-button-link">
+                                <span>More details</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                <div class="slide-content ">
+
+                    <img src="/images/slider3.jpg" alt="">
+                    <div class="slide-text ">
+                        <div class="text-content-slide">
+                        <div class="channel-logo  slider-text"><a href=""><img src="/images/logo.png" alt=""></a></div>
+                        <div class="big-title"><h1>THE 1917</h1></div>
+                        <div class="text-top slider-text "><span class="badge">16+</span><span class="ml-3">119m</span></div>
+                        <div class="text-mid  slider-text">
+                           
+                            <p>April 1917, the Western Front. Two British soldiers are sent to deliver an urgent message to an isolated regiment. If the message is not received in time the regiment will walk into a trap and be massacred.  </p>
+                        </div>
+                        <div class="elementor-button-wrapper  slider-text" style="padding: 30px 0 ;">
+                            <div class="btn-playnow"><a href="" class="hover"><span><i class="fa-solid fa-play"></i> Play now</span></a></div>
+                            <a href="" class="elementor-button-link">
+                                <span>More details</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            
+                <span class="prew" onclick="showSlides_header()"><i class="fa fa-circle-arrow-right"></i></span>
+                <span class="next" onclick="showSlides_header()"><i class="fa fa-circle-arrow-left"></i></span>
+            </div>
+        <main class="">
+            <div class="main-content  theme-container">
+                <section class="content-favorites">
+                    <div class="container-favo">
+                        <div class="rows">
+                            <div class="content-rows">
+                                <div class="title-text-content">
+                                    <a href=""><h4>Favorites Movies</h4></a>
+                                    <div class="owl-buttons">
+                                        <div class="owl-prev prev1" ><i class="fa-sharp fa-solid fa-arrow-left"></i></div>
+                                        <div class="owl-next next1"><i class="fa-sharp fa-solid fa-arrow-right"></i></div>
+        
+        
+                                    </div>
+                                </div>
+                                <div class="favo-contents" id="favoritesmovie">
+                                    
+                                   
+                                        <!--  -->
+                                       
+<!--                                    
+                                        <a  href="" class="content-row-product favoritesmovie" >
+                                            <div class="des-content">
+                                           <div class="img-content"> 
+                                                <img src="/images/01.jpg" alt="">
+                                            </div>
+                                            <div class="overplay-des"></div>
+                                           <div class="block-description">
+                                                <h6>Ghostbusters Afterlife</h6>
+                                                <div class="age-allow"><span class=" badge"> 09+</span><span class="move-times">1h 45m</span></div>
+                                                
+                                                <div class="btn-playnow">
+                                                    <div class="hover"><span><i class="fa-solid fa-play"></i> Play now</span></div>
+
+                                                </div>
+                                           </div>
+                                           <div class="block-social-info">
+                                                <ul>
+                                                    <li><span><i class="fa-solid fa-volume-xmark"></i></span></li>
+                                                    <li><span><i class="fa-solid fa-heart"></i></span></li>
+                                                    <li><span><i class="fa-solid fa-plus"></i></span></li>
+                                                </ul>
+                                           </div>
+                                        </div>
+                                        </a>
+                                        <a  href="" class="content-row-product favoritesmovie" >
+                                            <div class="des-content">
+                                           <div class="img-content"> 
+                                                <img src="/images/01.jpg" alt="">
+                                            </div>
+                                            <div class="overplay-des"></div>
+                                           <div class="block-description">
+                                                <h6>Ghostbusters Afterlife</h6>
+                                                <div class="age-allow"><span class=" badge"> 09+</span><span class="move-times">1h 45m</span></div>
+                                                
+                                                <div class="btn-playnow">
+                                                    <div class="hover"><span><i class="fa-solid fa-play"></i> Play now</span></div>
+
+                                                </div>
+                                           </div>
+                                           <div class="block-social-info">
+                                                <ul>
+                                                    <li><span><i class="fa-solid fa-volume-xmark"></i></span></li>
+                                                    <li><span><i class="fa-solid fa-heart"></i></span></li>
+                                                    <li><span><i class="fa-solid fa-plus"></i></span></li>
+                                                </ul>
+                                           </div>
+                                        </div>
+                                        </a>
+                                        <a  href="" class="content-row-product favoritesmovie" >
+                                            <div class="des-content">
+                                           <div class="img-content"> 
+                                                <img src="/images/01.jpg" alt="">
+                                            </div>
+                                            <div class="overplay-des"></div>
+                                           <div class="block-description">
+                                                <h6>Ghostbusters Afterlife</h6>
+                                                <div class="age-allow"><span class=" badge"> 09+</span><span class="move-times">1h 45m</span></div>
+                                                
+                                                <div class="btn-playnow">
+                                                    <div class="hover"><span><i class="fa-solid fa-play"></i> Play now</span></div>
+
+                                                </div>
+                                           </div>
+                                           <div class="block-social-info">
+                                                <ul>
+                                                    <li><span><i class="fa-solid fa-volume-xmark"></i></span></li>
+                                                    <li><span><i class="fa-solid fa-heart"></i></span></li>
+                                                    <li><span><i class="fa-solid fa-plus"></i></span></li>
+                                                </ul>
+                                           </div>
+                                        </div>
+                                        </a>
+                                        <a  href="" class="content-row-product favoritesmovie" >
+                                            <div class="des-content">
+                                           <div class="img-content"> 
+                                                <img src="/images/01.jpg" alt="">
+                                            </div>
+                                            <div class="overplay-des"></div>
+                                           <div class="block-description">
+                                                <h6>Ghostbusters Afterlife</h6>
+                                                <div class="age-allow"><span class=" badge"> 09+</span><span class="move-times">1h 45m</span></div>
+                                                
+                                                <div class="btn-playnow">
+                                                    <div class="hover"><span><i class="fa-solid fa-play"></i> Play now</span></div>
+
+                                                </div>
+                                           </div>
+                                           <div class="block-social-info">
+                                                <ul>
+                                                    <li><span><i class="fa-solid fa-volume-xmark"></i></span></li>
+                                                    <li><span><i class="fa-solid fa-heart"></i></span></li>
+                                                    <li><span><i class="fa-solid fa-plus"></i></span></li>
+                                                </ul>
+                                           </div>
+                                        </div>
+                                        </a>
+                                        <a  href="" class="content-row-product favoritesmovie" >
+                                            <div class="des-content">
+                                           <div class="img-content"> 
+                                                <img src="/images/01.jpg" alt="">
+                                            </div>
+                                            <div class="overplay-des"></div>
+                                           <div class="block-description">
+                                                <h6>Ghostbusters Afterlife</h6>
+                                                <div class="age-allow"><span class=" badge"> 09+</span><span class="move-times">1h 45m</span></div>
+                                                
+                                                <div class="btn-playnow">
+                                                    <div class="hover"><span><i class="fa-solid fa-play"></i> Play now</span></div>
+
+                                                </div>
+                                           </div>
+                                           <div class="block-social-info">
+                                                <ul>
+                                                    <li><span><i class="fa-solid fa-volume-xmark"></i></span></li>
+                                                    <li><span><i class="fa-solid fa-heart"></i></span></li>
+                                                    <li><span><i class="fa-solid fa-plus"></i></span></li>
+                                                </ul>
+                                           </div>
+                                        </div>
+                                        </a>
+                                       <a  href="" class="content-row-product favoritesmovie" >
+                                            <div class="des-content">
+                                           <div class="img-content"> 
+                                                <img src="/images/01.jpg" alt="">
+                                            </div>
+                                            <div class="overplay-des"></div>
+                                           <div class="block-description">
+                                                <h6>Ghostbusters Afterlife</h6>
+                                                <div class="age-allow"><span class=" badge"> 09+</span><span class="move-times">1h 45m</span></div>
+                                                
+                                                <div class="btn-playnow">
+                                                    <div class="hover"><span><i class="fa-solid fa-play"></i> Play now</span></div>
+
+                                                </div>
+                                           </div>
+                                           <div class="block-social-info">
+                                                <ul>
+                                                    <li><span><i class="fa-solid fa-volume-xmark"></i></span></li>
+                                                    <li><span><i class="fa-solid fa-heart"></i></span></li>
+                                                    <li><span><i class="fa-solid fa-plus"></i></span></li>
+                                                </ul>
+                                           </div>
+                                        </div>
+                                        </a>
+                                        <a  href="" class="content-row-product favoritesmovie" >
+                                            <div class="des-content">
+                                           <div class="img-content"> 
+                                                <img src="/images/01.jpg" alt="">
+                                            </div>
+                                            <div class="overplay-des"></div>
+                                           <div class="block-description">
+                                                <h6>Ghostbusters Afterlife</h6>
+                                                <div class="age-allow"><span class=" badge"> 09+</span><span class="move-times">1h 45m</span></div>
+                                                
+                                                <div class="btn-playnow">
+                                                    <div class="hover"><span><i class="fa-solid fa-play"></i> Play now</span></div>
+
+                                                </div>
+                                           </div>
+                                           <div class="block-social-info">
+                                                <ul>
+                                                    <li><span><i class="fa-solid fa-volume-xmark"></i></span></li>
+                                                    <li><span><i class="fa-solid fa-heart"></i></span></li>
+                                                    <li><span><i class="fa-solid fa-plus"></i></span></li>
+                                                </ul>
+                                           </div>
+                                        </div>
+                                        </a> -->
+                                        </div>
+                                </div>
+                                <div class="content-rows">
+                                    <div class="title-text-content">
+                                        <a href=""><h4>Upcoming Movies</h4></a>
+                                        <div class="owl-buttons">
+                                            <div class="owl-prev prev2"><i class="fa-sharp fa-solid fa-arrow-left"></i></div>
+                                            <div class="owl-next next2"><i class="fa-sharp fa-solid fa-arrow-right"></i></div>
+            
+            
+                                        </div>
+                                    </div>
+                                    <div class="favo-contents" id="upcomingmovie">
+                                       
+                                       
+                                          
+                                            </div>
+                                    </div>
+                            </div>
+                        </div>
+                 
+                </section>
+                <section id="iq-topten">
+                    <div class="rows">
+                        <div class="container-fluid">
+                            <div class="container-imgs-slide-card" id="slide-cards">
+                         
+                             
+                              
+                              </div>
+      
+                            
+      
+                              <div class="prev_icon" onclick="plusSlides(-1)"><span>❯ </span></div>
+                              <div class="next_icon" onclick="plusSlides(1)"><span> ❮</span></div>
+      
+                              <!-- <div class="caption-container">
+                                <p id="caption"></p>
+                              </div> -->
+      
+                              <div class="rows-column" style="margin: 10px 0;">
+                                <div class="title-top-ten"><h4>Top movies</h4></div>
+                              
+                                    <div id="top5view">
+                               
+                            </div>
+                              
+                              </div>
+                            </div>
+                        </div>
+
+                </section>
+                
+                <!-- <section class="content-favorites " >
+                    <div class="container-favo">
+                        <div class="rows">
+                            <div class="content-rows">
+                                <div class="title-text-content">
+                                    <a href=""><h4>Suggested For You</h4></a>
+                                    <div class="owl-buttons">
+                                        <div class="owl-prev prev3"><i class="fa-sharp fa-solid fa-arrow-left"></i></div>
+                                        <div class="owl-next next3"><i class="fa-sharp fa-solid fa-arrow-right"></i></div>
+        
+        
+                                    </div>
+                                </div>
+                                <div class="favo-contents">
+                              
+                                        
+                                        <a  href="" class="content-row-product suggestedmovie" >
+                                            <div class="des-content">
+                                           <div class="img-content"> 
+                                                <img src="/images/01.jpg" alt="">
+                                            </div>
+                                            <div class="overplay-des"></div>
+                                           <div class="block-description">
+                                                <h6>Ghostbusters Afterlife</h6>
+                                                <div class="age-allow"><span class=" badge"> 09+</span><span class="move-times">1h 45m</span></div>
+                                                
+                                                <div class="btn-playnow">
+                                                    <div class="hover"><span><i class="fa-solid fa-play"></i> Play now</span></div>
+
+                                                </div>
+                                           </div>
+                                           <div class="block-social-info">
+                                                <ul>
+                                                    <li><span><i class="fa-solid fa-volume-xmark"></i></span></li>
+                                                    <li><span><i class="fa-solid fa-heart"></i></span></li>
+                                                    <li><span><i class="fa-solid fa-plus"></i></span></li>
+                                                </ul>
+                                           </div>
+                                        </div>
+                                        </a>
+                                   
+                                        <a  href="" class="content-row-product suggestedmovie" >
+                                            <div class="des-content">
+                                           <div class="img-content"> 
+                                                <img src="/images/01.jpg" alt="">
+                                            </div>
+                                            <div class="overplay-des"></div>
+                                           <div class="block-description">
+                                                <h6>Ghostbusters Afterlife</h6>
+                                                <div class="age-allow"><span class=" badge"> 09+</span><span class="move-times">1h 45m</span></div>
+                                                
+                                                <div class="btn-playnow">
+                                                    <div class="hover"><span><i class="fa-solid fa-play"></i> Play now</span></div>
+
+                                                </div>
+                                           </div>
+                                           <div class="block-social-info">
+                                                <ul>
+                                                    <li><span><i class="fa-solid fa-volume-xmark"></i></span></li>
+                                                    <li><span><i class="fa-solid fa-heart"></i></span></li>
+                                                    <li><span><i class="fa-solid fa-plus"></i></span></li>
+                                                </ul>
+                                           </div>
+                                        </div>
+                                        </a>
+                                       
+                                       
+                                        </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                 
+                </section> -->
+                 <!-- Blog Section Begin -->
+    <!-- <section class="blog spad">
+        <div class="containers " style="width: 100%;">
+            <div class="row" tyle="width: 100%;">
+                <div class="col-lg-6">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="blog__item set-bg" data-setbg="img/blog/blog-1.jpg">
+                                <img src="/images/03.jpg" alt="" width="100%" height="100%" style="object-fit: cover;">
+                                <div class="blog__item__text">
+                                    <p><span class="icon_calendar"></span> 01 March 2020</p>
+                                    <h4><a href="#">Yuri Kuma Arashi Viverra Tortor Pharetra</a></h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-6">
+                            <div class="blog__item small__item set-bg" data-setbg="img/blog/blog-4.jpg">
+                                <img src="/images/03.jpg" alt="" width="100%" height="100%" style="object-fit: cover;">
+                                <div class="blog__item__text">
+                                    <p><span class="icon_calendar"></span> 01 March 2020</p>
+                                    <h4><a href="#">Bok no Hero Academia Season 4 – 18</a></h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-6">
+                            <div class="blog__item small__item set-bg" data-setbg="img/blog/blog-5.jpg">
+                            <img src="/images/03.jpg" alt="" width="100%" height="100%" style="object-fit: cover;">
+
+                                <div class="blog__item__text">
+                                    <p><span class="icon_calendar"></span> 01 March 2020</p>
+                                    <h4><a href="#">Fate/Stay Night: Untimated Blade World</a></h4>
+                                </div>
+                            </div>
+                        </div>
+                     
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6 col-sm-6">
+                            <div class="blog__item small__item set-bg" data-setbg="img/blog/blog-2.jpg">
+                                <img src="/images/03.jpg" alt="" width="100%" height="100%" style="object-fit: cover;">
+                                <div class="blog__item__text">
+                                    <p><span class="icon_calendar"></span> 01 March 2020</p>
+                                    <h4><a href="#">Fate/Stay Night: Untimated Blade World</a></h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-6">
+                            <div class="blog__item small__item set-bg" data-setbg="img/blog/blog-3.jpg">
+                                <img src="/images/03.jpg" alt="" width="100%" height="100%" style="object-fit: cover;">
+                                <div class="blog__item__text">
+                                    <p><span class="icon_calendar"></span> 01 March 2020</p>
+                                    <h4><a href="#">Building a Better LiA Drilling Down</a></h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-12">
+                            <div class="blog__item set-bg" data-setbg="img/blog/blog-6.jpg">
+                                <img src="/images/03.jpg" alt="" width="100%" height="100%" style="object-fit: cover;">
+                                <div class="blog__item__text">
+                                    <p><span class="icon_calendar"></span> 01 March 2020</p>
+                                    <h4><a href="#">Yuri Kuma Arashi Viverra Tortor Pharetra</a></h4>
+                                </div>
+                            </div>
+                        </div>
+                      
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+    <!-- Blog Section End -->
+
+
+   
+    <!-- sieu phẩm Section end -->
+
+</div>
+ <!-- sieu phẩm Section start -->
+ <section id="special-sieupham">
+    
+</section>
+            <!-- </div> -->
+        </main>
+
+        
+    <%- include('partials/footer') -%>
+    </div>
+</body>
+<script type="module" src="/js/product.js"></script>
+
+<script src="/ts/cart-imgs.js"></script>
+<script src="/js/slideshow.js"></script>
+
+</html>

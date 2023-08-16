@@ -1,0 +1,563 @@
+
+/* menu admin */
+@font-face {
+  font-family: Mergeblack;
+  src: url(../font/MergeBlack.woff);
+}
+*{
+  padding: 0 0;
+  margin: 0 0;
+}
+:root {
+    --top-begin: 0px;
+    --top-end: 0px;
+    --height-begin: 40px;
+    --height-end: 50px;
+  }
+  body{
+    /* font-family: system-ui; */
+    height: 100vh;
+  font-family: Mergeblack;
+
+    padding: 0 0;
+    margin: 0 0;
+    background-color: black !important;
+
+    /* background-image:radial-gradient(ellipse at left, #2D193B, #090A20); */
+  }
+    .bg-secondarys {
+      background-color: #191C24 !important;
+  }
+  .container-menu{
+            
+    width: 100%;
+    height: 100vh;
+    
+}
+.container-row-content {
+
+   
+    margin-left: 260px;
+
+
+}
+.container-row-content h2{
+    /* margin-top: 30px; */
+    color:   #EB1616;
+    text-align: center;
+    font-size: 28px;
+    /* background-image: linear-gradient(to bottom, #C45AB3, #DD789A);; */
+    font-family: Mergeblack;
+
+}
+.order-content{
+margin-top: 50px;
+display: flex;
+justify-content: space-around;
+}
+.order-row{
+
+
+display: flex;
+
+flex-direction: column;
+align-items: center;
+}
+.order-row span {
+font-size: 25px;
+color: white;
+font-weight: bold;
+}
+.order-row p {
+font-size: 25px;
+color: #878686;
+/* font-family: 'Signika Negative'; */
+font-weight: bold;
+}
+.order-row i{
+color: white;
+font-size: 30px;
+padding-bottom: 20px;
+}
+/* Hide and show projects & skills */
+.row-content-mid{
+margin: 50px 0;
+}
+.list-chart table{
+width: 100%;
+color: white;
+text-align: center;
+}
+.list-chart table tr th{
+font-size: 25px;
+font-family: Mergeblack;
+
+/* font-family: 'Signika Negative'; */
+font-weight: bold;
+}
+.list-chart table {
+margin:  20px 0;
+}
+.list-chart table td {
+height: 70px;
+}
+.list-chart table tr td{
+font-size: 20px;
+
+font-weight: 500;
+/* font-family: 'Signika Negative'; */
+
+}
+  .menu{
+    /* background-color: rgb(42, 36, 77, 0.2); */
+    background-color: #191C24 !important ;
+    width: 230px;
+    height: 100vh;
+    position: fixed;
+    padding:10px 0;
+    border-radius: 20px;
+    margin:30px 0 30px 10px ;
+    font-size: 18px;
+  }
+  
+  ul{
+    list-style: none;
+    padding-left:  10px !important;
+    width: 100%;
+    margin-top:20px !important ;
+    position: relative;
+  }
+  ul li{
+    padding:10px;
+    margin-bottom: 20px;
+    position: relative;
+    color:#757474  !important ;
+    cursor: pointer;
+    transition: 0.5s;
+    transition-delay: 1s;
+  font-family: Mergeblack;
+
+  }
+  
+  ul li i{
+    width:30px;
+    /* font-size: 15px; */
+    position: relative;
+    z-index: 1;
+    font-size: 20px;
+    text-align: center;
+    margin-right:30px;
+  }
+  ul li::before{
+    position: absolute;
+    top:0;
+    left:5px;
+    width:40px;
+    height:100%;
+    content: '';
+    background-color: #312B57  !important ;
+    border-radius: 30px;
+    transition: 1s;
+  }
+  li i:nth-child(2){
+    position: absolute;
+    right:0;
+    top:15px;
+    transition: 0.5s;
+    opacity: 0.5;
+  }
+  
+  
+  
+  ul li li{
+    margin-bottom: unset;
+    margin-top: 10px;
+    padding-left:50px;
+    opacity: 0;
+    animation: shochild 1s ease 1 forwards;
+    position: relative;
+    z-index: 1;
+  }
+  @keyframes shochild{
+    from{
+        opacity: 0;
+        transform: translate(0,-20px);
+    }to{
+        opacity: 1;
+    }
+  }
+  
+  li li:nth-last-child(1){
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+  ul li li::before{
+    position: absolute;
+    left:13px;
+    top:50%;
+    width:5px;
+    height:5px;
+    content:'';
+    background-color:  #EB1616  !important ;
+    z-index: 1;
+    transition: 1s;
+  }
+  
+  
+  
+  
+  ul li li:nth-child(1),
+  ul li li:nth-child(1)::before{
+    transition-delay: 1.2s;
+  }
+  ul li li:nth-child(2),
+  ul li li:nth-child(2)::before{
+    transition-delay: 1.4s;
+  }
+  ul li li:nth-child(3),
+  ul li li:nth-child(3)::before{
+    transition-delay: 1.6s;
+  }
+  ul li li:nth-child(2){
+    animation-delay: 0.2s;
+  }
+  ul li li:nth-child(3){
+    animation-delay: 0.4s;
+  }
+  
+  
+  ul ul{
+    position: relative;
+    display: none;
+    transition: 1s;
+  }
+  
+  .showMenuChild{    
+    transform: rotate(180deg);
+  }
+  
+  .showMenuChild ~ ul{
+    display: block;
+  }
+  #action{
+    background-color:  #EB1616;;
+    position: absolute;
+    width:40px;
+    height:var(--height-end);
+    border-radius: 30px;
+    /* background-image: linear-gradient(to bottom, #C45AB3, #DD789A); */
+    top:var(--top-end);
+    left:16px;
+    transition: 1s;
+  }
+  .active li::before{
+    background-color: #eee  !important ;
+  }
+  .runanimation{
+    animation: animationaction 1s ease-in 1;
+  }
+  .active, .active li{
+    color:#fff  !important ;
+  }
+  
+  @keyframes animationaction{
+    0%{
+        height: var(--height-begin);
+        top: var(--top-begin);
+    }
+    30%{
+        height: var(--height-begin);
+        width:10px;
+        height:10px;
+        transform: translate(15px);
+       
+    }
+    50%{
+        filter: none;
+        height:10px;
+    }
+    70%{
+        width:10px;
+        transform: translate(15px);
+        filter: blur(3px);
+    }100%{
+    }
+  }
+  
+  /*   loai hang*/
+  .btns-submit button, .update_btn{
+    background-color:  #EB1616;;
+    color: white;
+    padding: 5px 13px;
+    border-radius: 10px;
+  font-family: Mergeblack;
+    font-size: 18px;
+    cursor: pointer;
+    margin: 20px 5px;
+  }
+ .delete_cat_btn i{
+  color: #eee;
+ }
+  .checkbox-rect{
+    position: relative;
+  }
+  .checkbox-rect input[type="checkbox"]{
+    position: absolute;
+    top: 25px;
+        left: 41px;
+        width: 25px;
+        height: 25px;
+        opacity: 0;
+        z-index: 10;
+  }
+  .checkbox-rect .checkmark{
+    width: 20px;
+    height: 20px;
+   background-color: white;
+    display: block;
+    border-radius: 5px;
+    margin: 0 auto;
+    position: relative;
+  }
+  .checkbox-rect .checkmark:before{
+    content: "";
+    position: absolute;
+    top: 1px;
+    left: 2px;
+    width: 10px;
+    height: 5px;
+    border: 2px solid;
+    border-color: transparent transparent #fff #fff;
+    transform: rotate(-45deg);
+    display: none;
+  }
+   .checkbox-rect input[type="checkbox"]:checked ~ .checkmark{
+    background: #C45AB3;
+  }
+  
+  .checkbox-rect input[type="checkbox"]:checked ~ .checkmark:before{
+    display: block;
+  }
+
+  /* form them mới lh*/
+  .active-lh{
+    display: none;
+
+ }
+ .form-add-lh {
+    width: 50%;
+    margin: 30px auto;
+ }
+ .form-add-lh .form-group-add{
+    width: 100%;
+    margin: 30px 0;
+ }
+ .form-add-lh .form-group-add label{
+    width: 100%;
+    font-size: 23px;
+    font-family: 'Signika Negative';
+    font-weight: bold;
+    color: white;
+ }
+ .form-add-lh .form-group-add .form-control-add{
+    width: 100%;
+    padding: 13px;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+ }
+ .form-group-add button{
+    background-color: #EB1616;
+color: white;
+padding: 5px 13px;
+border-radius: 10px;
+font-family: Mergeblack;
+font-size: 18px;
+cursor: pointer;
+margin: 20px 5px;
+ }
+
+ /*form them mới hh*/
+ .form-add-hh{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+flex-wrap: wrap;
+}
+.form-add-hh .form-group-hh{
+  width: 33%;
+}
+.form-group-hh label{
+  width: 100%;
+
+font-size: 23px;
+font-family: 'Signika Negative';
+font-weight: bold;
+color: white;
+}
+.form-add-hh .form-control-hh{
+  padding: 14px 10px;
+  margin: 10px 0;
+  width: 90%;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  background-color: white;
+}
+.form-add-hh .form-control-hh input[type=radio]{
+  margin: 0 15px;
+}
+.navbar{
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+
+}
+.account .name-acc{
+  text-align: center;
+  color: aliceblue;
+}
+.account .name-acc h3{
+  font-size: 20px;
+}
+.account .name-acc h5{
+  font-size: 15px;
+}
+.account .img-acc{
+  width: 100%;
+  border-radius: 50%;
+  text-align: center;
+
+}
+.account{
+margin-bottom: 10px;
+}
+.account .img-acc img{
+width: 40%;
+margin: 0 auto;
+border-radius: 50%;
+height: 90px;
+    object-fit: cover;
+}
+.menu{
+margin: 0 0 !important;
+border-radius: 0% !important;
+  /* background-image:radial-gradient(ellipse at left, #2D193B, #090A20); */
+}
+
+.menu-row{
+margin: 0 0;
+padding: 0 0;
+
+
+}
+body{
+margin: 0 0 !important;
+padding: 0 0 !important;
+overflow-x: hidden;
+}
+/* .all-content{
+margin-top: 40px !important;
+
+}
+.container-row-content >h2 {
+margin-top: 10px !important;
+} */
+.row-content-top h2{
+/* margin-top: 20px; */
+padding: 20px 0;
+}
+/* .container-row-content{
+background-color: #191C24 !important;
+} */
+.container-row-content h2 {
+padding: 20px 0;
+
+}
+.logo{
+text-align: center;
+
+}
+.logo img{
+width: 90%;
+}
+
+
+.modal-dialog{
+  max-width: 600px !important;
+  margin: -1rem auto !important;
+}
+
+.modal-content{
+  background-color: #191C24 !important;
+}
+.modal-title{
+  color:#EB1616;
+  font-family: Mergeblack;
+font-size: 21px;
+text-align: center;
+}
+.modal-body input{
+  width: 70%;
+  font-family: Mergeblack;
+
+}
+.modal-body .form-group-add{
+  margin: 10px auto;
+
+}
+.modal-body label{
+  color: white;
+font-size: 18px;
+font-family: Mergeblack;
+
+  width: 20%;
+}
+.modal-dialog_pro{
+  max-width: 1400px !important;
+  margin: -1rem auto !important;
+}
+.modal-dialog_pro .modal-body label{
+  color: white;
+font-size: 18px;
+font-family: Mergeblack;
+
+  width: 30%;
+}
+
+.modal-body .form-control-add{
+  padding: 5px 10px;
+  outline: none;
+}
+.btn-primary {
+  color: #fff;
+  font-family: Mergeblack;
+  
+  background-color:#EB1616;
+  /* border-color: #007bff; */
+}
+.up{
+  width: 32%;
+  margin:10px 5px;
+  float: left;
+  
+}
+.up .form-control-hh{
+  width: 65%;
+  font-size: 15px;
+  padding: 5px 3px ;
+  background-color: white;
+  border-radius: 5px;
+  /* float: left; */
+}
+.up .form-control-hh input[type=radio]{
+  width: fit-content;
+  
+}

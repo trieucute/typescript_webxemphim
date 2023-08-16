@@ -1,0 +1,686 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WEB FILMS</title>
+    <link rel="stylesheet" href="public/css/index.css">
+    <link rel="stylesheet" href="public/font/fontawesome/fontawesome-free-6.1.1-web/css/all.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,300;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container-all">
+        <header>
+            <div class="main-header">
+                <div class="theme-container menu-container">
+                    <div class="menu-left"><a href="index.html">
+                            <img src="public/images/logo.png" alt=""></a>
+                    </div>
+                    <div class="menu-center">
+                        <nav class="menu-main">
+                            <ul class="menu-display">
+                                <!-- <span id="Categories"></span> -->
+                                <li><a href="index.html">HOME</a></li>
+                                <li class="menu-shop"><a href="site/shop.html">GENRES <i class="arrow-down">^</i></a>
+                                    <ul class="nav-menu-shop" id="nav-menu-shop">
+                                        <script type="module" src="module/categories.js"></script>
+
+                                    </ul>
+
+                                </li>
+                                <li><a href="">PAGES<i class="arrow-down">^</i></a></li>
+                                <li><a href="">TV SHOWS<i class="arrow-down">^</i></a></li>
+                                <li><a href="">MOVIES<i class="arrow-down">^</i></a></li>
+                                <li><a href="">NEWS<i class="arrow-down">^</i></a></li>
+                                <li><a href="">CONTACT</a></li>
+                                
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="menu-right">
+                        <ul >
+                            <li >
+                                    <a href=""><i class="fa-solid fa-magnifying-glass"></i></a>
+                            </li>
+                            <li>
+                                <a href=""><i class="fa-regular fa-bell"></i></a>
+                            </li>
+                            <li class="img-user">
+                                <a href="">
+                                    <img src="public/images/me.jpg" alt="">
+                                </a>
+                            </li>
+                        </ul>
+                        <!-- <div class="cart">
+                            <i class="fa-sharp fa-solid fa-cart-shopping"></i>
+                            <div class="cart-price">
+                                <a href="">
+                                    <span class="cart-contents"> $0.00</span>
+                                    <span class="cart-qty">0</span>
+                                </a>
+                            </div>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+        </header>
+       
+            <div class="slide-show">
+                <div class="overplay"></div>
+                <div class="slide-content active">
+               
+                    <img src="public/images/slider1.jpg" alt="">
+                    <div class="slide-text ">
+                        <div class="text-content-slide">
+                        <div class="channel-logo  slider-text"><a href=""><img src="public/images/logo.png" alt=""></a></div>
+                        <div class="big-title"><h1> SKY LIN 3S</h1></div>
+                        <div class="text-top slider-text "><span class="badge">50+</span><span class="ml-3">5 Seasons</span></div>
+                        <div class="text-mid  slider-text">
+                           
+                            <p> It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters.</p>
+                        </div>
+                        <div class="elementor-button-wrapper  slider-text" style="padding: 30px 0 ;">
+                            <div class="btn-playnow"><a href="" class="hover"><span><i class="fa-solid fa-play"></i> Play now</span></a></div>
+                            <a href="" class="elementor-button-link">
+                                <span>More details</span>
+                            </a>
+                        </div>
+                    </div>
+</div>
+
+                </div>
+                <div class="slide-content ">
+
+                    <img src="/images/banner2.webp" alt="">
+                    <div class="slide-text">
+                        <div class="text-content-slide">
+                        <div class="channel-logo  slider-text"><img src="public/images/logo.png" alt=""></div>
+
+                        <div class="text-top  slider-text"><span>Save up to 20% and more</span></div>
+                        <div class="text-mid  slider-text">
+                            <h2>Play Game <br> With Lastest Version</h2>
+                        </div>
+                        <div class="elementor-button-wrapper  slider-text" style="padding: 30px 0 ;">
+                            <a href="" class="elementor-button-link">
+                                <span>read more</span>
+                            </a>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                <div class="slide-content ">
+
+                    <img src="/images/banner3.jpg" alt="" style="width:100%">
+                    <div class="slide-text">
+                        <div class="text-content-slide">
+                        <div class="channel-logo  slider-text"><img src="public/images/logo.png" alt=""></div>
+                        <div class="text-top  slider-text"><span style="color:black">Save up to 20% and more</span></div>
+                        <div class="text-mid  slider-text" style="color:black">
+                            <h2>Play Game With <br>Lastest Version</h2>
+                        </div>
+                        <div class="elementor-button-wrapper  slider-text" style="padding: 30px 0 ;">
+                            <a href="" class="elementor-button-link">
+                                <span>read more</span>
+                            </a>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            
+                <span class="prew" onclick="showSlides()"><i class="fa fa-circle-arrow-right"></i></span>
+                <span class="next" onclick="showSlides()"><i class="fa fa-circle-arrow-left"></i></span>
+            </div>
+        <main class="">
+            <div class="main-content  theme-container">
+                <section class="content-favorites">
+                    <div class="container-favo">
+                        <div class="row">
+                            <div class="content-rows">
+                                <div class="title-text-content">
+                                    <a href=""><h4>Favorites Movies</h4></a>
+                                    <div class="owl-buttons">
+                                        <div class="owl-prev"><i class="fa-sharp fa-solid fa-arrow-left"></i></div>
+                                        <div class="owl-next"><i class="fa-sharp fa-solid fa-arrow-right"></i></div>
+        
+        
+                                    </div>
+                                </div>
+                                <div class="favo-contents">
+                                    <!-- <div  class="row-product" id="content-row-product"> -->
+                                        <!-- <input type="hidden" value="<%=p.id_pro%>" id="idpro"> -->
+                                        
+                                        <a  href="" class="content-row-product" >
+                                            <div class="des-content">
+                                           <div class="img-content"> 
+                                                <img src="public/images/01.jpg" alt="">
+                                            </div>
+                                            <div class="overplay-des"></div>
+                                           <div class="block-description">
+                                                <h6>Ghostbusters Afterlife</h6>
+                                                <div class="age-allow"><span class=" badge"> 09+</span><span class="move-times">1h 45m</span></div>
+                                                
+                                                <div class="btn-playnow">
+                                                    <div class="hover"><span><i class="fa-solid fa-play"></i> Play now</span></div>
+
+                                                </div>
+                                           </div>
+                                           <div class="block-social-info">
+                                                <ul>
+                                                    <li><span><i class="fa-solid fa-volume-xmark"></i></span></li>
+                                                    <li><span><i class="fa-solid fa-heart"></i></span></li>
+                                                    <li><span><i class="fa-solid fa-plus"></i></span></li>
+                                                </ul>
+                                           </div>
+                                        </div>
+                                        </a>
+                                   
+                                        <a  href="" class="content-row-product" >
+                                            <div class="des-content">
+                                           <div class="img-content"> 
+                                                <img src="public/images/01.jpg" alt="">
+                                            </div>
+                                            <div class="overplay-des"></div>
+                                           <div class="block-description">
+                                                <h6>Ghostbusters Afterlife</h6>
+                                                <div class="age-allow"><span class=" badge"> 09+</span><span class="move-times">1h 45m</span></div>
+                                                
+                                                <div class="btn-playnow">
+                                                    <div class="hover"><span><i class="fa-solid fa-play"></i> Play now</span></div>
+
+                                                </div>
+                                           </div>
+                                           <div class="block-social-info">
+                                                <ul>
+                                                    <li><span><i class="fa-solid fa-volume-xmark"></i></span></li>
+                                                    <li><span><i class="fa-solid fa-heart"></i></span></li>
+                                                    <li><span><i class="fa-solid fa-plus"></i></span></li>
+                                                </ul>
+                                           </div>
+                                        </div>
+                                        </a>
+                                        <a  href="" class="content-row-product" >
+                                            <div class="des-content">
+                                           <div class="img-content"> 
+                                                <img src="public/images/01.jpg" alt="">
+                                            </div>
+                                            <div class="overplay-des"></div>
+                                           <div class="block-description">
+                                                <h6>Ghostbusters Afterlife</h6>
+                                                <div class="age-allow"><span class=" badge"> 09+</span><span class="move-times">1h 45m</span></div>
+                                                
+                                                <div class="btn-playnow">
+                                                    <div class="hover"><span><i class="fa-solid fa-play"></i> Play now</span></div>
+
+                                                </div>
+                                           </div>
+                                           <div class="block-social-info">
+                                                <ul>
+                                                    <li><span><i class="fa-solid fa-volume-xmark"></i></span></li>
+                                                    <li><span><i class="fa-solid fa-heart"></i></span></li>
+                                                    <li><span><i class="fa-solid fa-plus"></i></span></li>
+                                                </ul>
+                                           </div>
+                                        </div>
+                                        </a>
+                                        <a  href="" class="content-row-product" >
+                                            <div class="des-content">
+                                           <div class="img-content"> 
+                                                <img src="public/images/01.jpg" alt="">
+                                            </div>
+                                            <div class="overplay-des"></div>
+                                           <div class="block-description">
+                                                <h6>Ghostbusters Afterlife</h6>
+                                                <div class="age-allow"><span class=" badge"> 09+</span><span class="move-times">1h 45m</span></div>
+                                                
+                                                <div class="btn-playnow">
+                                                    <div class="hover"><span><i class="fa-solid fa-play"></i> Play now</span></div>
+
+                                                </div>
+                                           </div>
+                                           <div class="block-social-info">
+                                                <ul>
+                                                    <li><span><i class="fa-solid fa-volume-xmark"></i></span></li>
+                                                    <li><span><i class="fa-solid fa-heart"></i></span></li>
+                                                    <li><span><i class="fa-solid fa-plus"></i></span></li>
+                                                </ul>
+                                           </div>
+                                        </div>
+                                        </a>
+                                       
+                                        </div>
+                                </div>
+                                <div class="content-rows">
+                                    <div class="title-text-content">
+                                        <a href=""><h4>Upcoming Movies</h4></a>
+                                        <div class="owl-buttons">
+                                            <div class="owl-prev"><i class="fa-sharp fa-solid fa-arrow-left"></i></div>
+                                            <div class="owl-next"><i class="fa-sharp fa-solid fa-arrow-right"></i></div>
+            
+            
+                                        </div>
+                                    </div>
+                                    <div class="favo-contents">
+                                        <!-- <div  class="row-product" id="content-row-product"> -->
+                                            <!-- <input type="hidden" value="<%=p.id_pro%>" id="idpro"> -->
+                                            
+                                            <a  href="" class="content-row-product" >
+                                                <div class="des-content">
+                                               <div class="img-content"> 
+                                                    <img src="public/images/01.jpg" alt="">
+                                                </div>
+                                                <div class="overplay-des"></div>
+                                               <div class="block-description">
+                                                    <h6>Ghostbusters Afterlife</h6>
+                                                    <div class="age-allow"><span class=" badge"> 09+</span><span class="move-times">1h 45m</span></div>
+                                                    
+                                                    <div class="btn-playnow">
+                                                        <div class="hover"><span><i class="fa-solid fa-play"></i> Play now</span></div>
+    
+                                                    </div>
+                                               </div>
+                                               <div class="block-social-info">
+                                                    <ul>
+                                                        <li><span><i class="fa-solid fa-volume-xmark"></i></span></li>
+                                                        <li><span><i class="fa-solid fa-heart"></i></span></li>
+                                                        <li><span><i class="fa-solid fa-plus"></i></span></li>
+                                                    </ul>
+                                               </div>
+                                            </div>
+                                            </a>
+                                       
+                                            <a  href="" class="content-row-product" >
+                                                <div class="des-content">
+                                               <div class="img-content"> 
+                                                    <img src="public/images/01.jpg" alt="">
+                                                </div>
+                                                <div class="overplay-des"></div>
+                                               <div class="block-description">
+                                                    <h6>Ghostbusters Afterlife</h6>
+                                                    <div class="age-allow"><span class=" badge"> 09+</span><span class="move-times">1h 45m</span></div>
+                                                    
+                                                    <div class="btn-playnow">
+                                                        <div class="hover"><span><i class="fa-solid fa-play"></i> Play now</span></div>
+    
+                                                    </div>
+                                               </div>
+                                               <div class="block-social-info">
+                                                    <ul>
+                                                        <li><span><i class="fa-solid fa-volume-xmark"></i></span></li>
+                                                        <li><span><i class="fa-solid fa-heart"></i></span></li>
+                                                        <li><span><i class="fa-solid fa-plus"></i></span></li>
+                                                    </ul>
+                                               </div>
+                                            </div>
+                                            </a>
+                                            <a  href="" class="content-row-product" >
+                                                <div class="des-content">
+                                               <div class="img-content"> 
+                                                    <img src="public/images/01.jpg" alt="">
+                                                </div>
+                                                <div class="overplay-des"></div>
+                                               <div class="block-description">
+                                                    <h6>Ghostbusters Afterlife</h6>
+                                                    <div class="age-allow"><span class=" badge"> 09+</span><span class="move-times">1h 45m</span></div>
+                                                    
+                                                    <div class="btn-playnow">
+                                                        <div class="hover"><span><i class="fa-solid fa-play"></i> Play now</span></div>
+    
+                                                    </div>
+                                               </div>
+                                               <div class="block-social-info">
+                                                    <ul>
+                                                        <li><span><i class="fa-solid fa-volume-xmark"></i></span></li>
+                                                        <li><span><i class="fa-solid fa-heart"></i></span></li>
+                                                        <li><span><i class="fa-solid fa-plus"></i></span></li>
+                                                    </ul>
+                                               </div>
+                                            </div>
+                                            </a>
+                                            <a  href="" class="content-row-product" >
+                                                <div class="des-content">
+                                               <div class="img-content"> 
+                                                    <img src="public/images/01.jpg" alt="">
+                                                </div>
+                                                <div class="overplay-des"></div>
+                                               <div class="block-description">
+                                                    <h6>Ghostbusters Afterlife</h6>
+                                                    <div class="age-allow"><span class=" badge"> 09+</span><span class="move-times">1h 45m</span></div>
+                                                    
+                                                    <div class="btn-playnow">
+                                                        <div class="hover"><span><i class="fa-solid fa-play"></i> Play now</span></div>
+    
+                                                    </div>
+                                               </div>
+                                               <div class="block-social-info">
+                                                    <ul>
+                                                        <li><span><i class="fa-solid fa-volume-xmark"></i></span></li>
+                                                        <li><span><i class="fa-solid fa-heart"></i></span></li>
+                                                        <li><span><i class="fa-solid fa-plus"></i></span></li>
+                                                    </ul>
+                                               </div>
+                                            </div>
+                                            </a>
+                                           
+                                            </div>
+                                    </div>
+                            </div>
+                        </div>
+                 
+                </section>
+                <section id="iq-topten">
+                    <div class="row">
+                        <div class="container-fluid">
+                            <div class="container-imgs-slide-card">
+                            <div class="mySlides_pro" style="display: block;">
+
+                                <img src="public/images/02.jpg" style="width:100%">
+                              </div>
+      
+                              <div class="mySlides_pro">
+      
+                                <img src="public/images/02.jpg" style="width:100%">
+                              </div>
+      
+                              <div class="mySlides_pro">
+      
+                                <img src="public/images/02.jpg" style="width:100%">
+                              </div>
+      
+                              <div class="mySlides_pro">
+      
+                                <img src="public/images/02.jpg" style="width:100%">
+                              </div>
+                              <div class="mySlides_pro">
+      
+                              <img src="public/images/02.jpg" style="width:100%">
+                            </div>
+                            <div class="mySlides_pro">
+      
+                                <img src="public/images/02.jpg" style="width:100%">
+                              </div>
+                              <div class="mySlides_pro">
+      
+                                <img src="public/images/02.jpg" style="width:100%">
+                              </div>
+                              </div>
+      
+                            
+      
+                              <!-- <a class="prev_icon" onclick="plusSlides(-1)">❮</a>
+                              <a class="next_icon" onclick="plusSlides(1)">❯</a>
+       -->
+                              <!-- <div class="caption-container">
+                                <p id="caption"></p>
+                              </div> -->
+      
+                              <div class="rows-column" style="margin: 10px 0;">
+                                <div class="title-top-ten"><h4>Top movies</h4></div>
+                                <div class="column relative">
+                                  <img class="demo cursor" src="public/images/02.jpg" style="width:100%" onclick="currentSlide(1)" >
+                                  <div class="contents-card-slide">
+                                            <div class="block-description" style="opacity: 1 !important;">
+                                                <h6>Ghostbusters Afterlife</h6>
+                                                <div class="age-allow"><span class=" badge"> 09+</span><span class="move-times">1h 45m</span></div>
+                                                <div class="btn-playnow">
+                                                    <div class="hover"><span><i class="fa-solid fa-play"></i> Play now</span></div>
+                                                </div>
+                                          
+                                        </div>
+                                  </div>
+                                </div>
+                                <div class="column">
+                                  <img class="demo cursor" src="public/images/02.jpg" style="width:100%" onclick="currentSlide(2)" >
+                                </div>
+                                <div class="column">
+                                  <img class="demo cursor" src="public/images/02.jpg" style="width:100%" onclick="currentSlide(3)" >
+                                </div>
+                                <div class="column">
+                                  <img class="demo cursor" src="public/images/02.jpg" style="width:100%" onclick="currentSlide(4)">
+                                </div>
+                                <div class="column">
+                                <img class="demo cursor" src="public/images/02.jpg" style="width:100%" onclick="currentSlide(5)" >
+                              </div>    
+                                <!-- <div class="column">
+      
+                                  <img class="demo cursor" src="public/images/02.jpg" style="width:100%" onclick="currentSlide(6)" alt="gameplay1">
+      
+      
+                                </div>     -->
+                                <!-- <div class="column">
+                                <img class="demo cursor" src="public/images/02.jpg" style="width:100%" onclick="currentSlide(7)" alt="gameplay2">
+      
+                                </div> -->
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                
+                <section class="content-favorites " style="width: 90%; margin: 0 auto;">
+                    <div class="container-favo">
+                        <div class="row">
+                            <div class="content-rows">
+                                <div class="title-text-content">
+                                    <a href=""><h4>Suggested For You</h4></a>
+                                    <div class="owl-buttons">
+                                        <div class="owl-prev"><i class="fa-sharp fa-solid fa-arrow-left"></i></div>
+                                        <div class="owl-next"><i class="fa-sharp fa-solid fa-arrow-right"></i></div>
+        
+        
+                                    </div>
+                                </div>
+                                <div class="favo-contents">
+                                    <!-- <div  class="row-product" id="content-row-product"> -->
+                                        <!-- <input type="hidden" value="<%=p.id_pro%>" id="idpro"> -->
+                                        
+                                        <a  href="" class="content-row-product" >
+                                            <div class="des-content">
+                                           <div class="img-content"> 
+                                                <img src="public/images/01.jpg" alt="">
+                                            </div>
+                                            <div class="overplay-des"></div>
+                                           <div class="block-description">
+                                                <h6>Ghostbusters Afterlife</h6>
+                                                <div class="age-allow"><span class=" badge"> 09+</span><span class="move-times">1h 45m</span></div>
+                                                
+                                                <div class="btn-playnow">
+                                                    <div class="hover"><span><i class="fa-solid fa-play"></i> Play now</span></div>
+
+                                                </div>
+                                           </div>
+                                           <div class="block-social-info">
+                                                <ul>
+                                                    <li><span><i class="fa-solid fa-volume-xmark"></i></span></li>
+                                                    <li><span><i class="fa-solid fa-heart"></i></span></li>
+                                                    <li><span><i class="fa-solid fa-plus"></i></span></li>
+                                                </ul>
+                                           </div>
+                                        </div>
+                                        </a>
+                                   
+                                        <a  href="" class="content-row-product" >
+                                            <div class="des-content">
+                                           <div class="img-content"> 
+                                                <img src="public/images/01.jpg" alt="">
+                                            </div>
+                                            <div class="overplay-des"></div>
+                                           <div class="block-description">
+                                                <h6>Ghostbusters Afterlife</h6>
+                                                <div class="age-allow"><span class=" badge"> 09+</span><span class="move-times">1h 45m</span></div>
+                                                
+                                                <div class="btn-playnow">
+                                                    <div class="hover"><span><i class="fa-solid fa-play"></i> Play now</span></div>
+
+                                                </div>
+                                           </div>
+                                           <div class="block-social-info">
+                                                <ul>
+                                                    <li><span><i class="fa-solid fa-volume-xmark"></i></span></li>
+                                                    <li><span><i class="fa-solid fa-heart"></i></span></li>
+                                                    <li><span><i class="fa-solid fa-plus"></i></span></li>
+                                                </ul>
+                                           </div>
+                                        </div>
+                                        </a>
+                                        <a  href="" class="content-row-product" >
+                                            <div class="des-content">
+                                           <div class="img-content"> 
+                                                <img src="public/images/01.jpg" alt="">
+                                            </div>
+                                            <div class="overplay-des"></div>
+                                           <div class="block-description">
+                                                <h6>Ghostbusters Afterlife</h6>
+                                                <div class="age-allow"><span class=" badge"> 09+</span><span class="move-times">1h 45m</span></div>
+                                                
+                                                <div class="btn-playnow">
+                                                    <div class="hover"><span><i class="fa-solid fa-play"></i> Play now</span></div>
+
+                                                </div>
+                                           </div>
+                                           <div class="block-social-info">
+                                                <ul>
+                                                    <li><span><i class="fa-solid fa-volume-xmark"></i></span></li>
+                                                    <li><span><i class="fa-solid fa-heart"></i></span></li>
+                                                    <li><span><i class="fa-solid fa-plus"></i></span></li>
+                                                </ul>
+                                           </div>
+                                        </div>
+                                        </a>
+                                        <a  href="" class="content-row-product" >
+                                            <div class="des-content">
+                                           <div class="img-content"> 
+                                                <img src="public/images/01.jpg" alt="">
+                                            </div>
+                                            <div class="overplay-des"></div>
+                                           <div class="block-description">
+                                                <h6>Ghostbusters Afterlife</h6>
+                                                <div class="age-allow"><span class=" badge"> 09+</span><span class="move-times">1h 45m</span></div>
+                                                
+                                                <div class="btn-playnow">
+                                                    <div class="hover"><span><i class="fa-solid fa-play"></i> Play now</span></div>
+
+                                                </div>
+                                           </div>
+                                           <div class="block-social-info">
+                                                <ul>
+                                                    <li><span><i class="fa-solid fa-volume-xmark"></i></span></li>
+                                                    <li><span><i class="fa-solid fa-heart"></i></span></li>
+                                                    <li><span><i class="fa-solid fa-plus"></i></span></li>
+                                                </ul>
+                                           </div>
+                                        </div>
+                                        </a>
+                                       
+                                        </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                 
+                </section>
+                <section id="iq-suggestede">
+                    div.
+                </section>
+            </div>
+        </main>
+
+        
+        <footer class="footer elementor-color">
+            <div class="footer-top theme-container">
+                <div class="box-content-foot">
+                    <div class="title-outer">
+                        <h3>Contact Us</h3>
+        
+                    </div>
+                    <div class="contact_wrapper">
+                        <div class="address">1340 Le Duc Tho, Phuong 13, Quan Go Vap, TP.HCM </div>
+                        <div class="phone">(+08) 369540497</div>
+                        <div class="email">trieutbps24977@fpt.edu.vn</div>
+        
+        
+                    </div>
+                </div>
+                <div class="box-content-foot">
+                    <div class="title-outer">
+                        <h3>Our Server</h3>
+        
+                    </div>
+                    <div class="static-links-list">
+                        <span>
+                            <a href="">
+                                Your Account</a>
+                        </span>
+                        <span><a href="">
+                                Return Center</a></span>
+                        <span><a href="">
+                                Purchase</a></span>
+                        <span><a href="">
+                                App Download</a></span>
+                        <span><a href="">
+                                Latest News</a></span>
+                    </div>
+                </div>
+                <div class="box-content-foot">
+                    <div class="title-outer">
+                        <h3>Information</h3>
+        
+                    </div>
+                    <div class="static-links-list">
+                        <span>
+                            <a href="">About Us</a>
+                        </span>
+                        <span><a href="">
+                                Contact Us</a></span>
+                        <span><a href="">
+                                Terms & Conditions</a></span>
+                        <span><a href="">
+                                Returns & Exchanges</a></span>
+                        <span><a href="">
+                                Shipping & Delivery</a></span>
+                    </div>
+                </div>
+                <div class="box-content-foot">
+                    <div class="title-outer">
+                        <h3>My Account</h3>
+        
+                    </div>
+                    <div class="static-links-list">
+                        <span>
+                            <a href="">
+                                Order History</a>
+                        </span>
+                        <span><a href="">
+                                Wishlist</a></span>
+                        <span><a href="">
+                                Contact Us</a></span>
+                        <span><a href="">
+                                About Us</a></span>
+                        <span><a href="">
+                                Our Work</a></span>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bot">
+                <div class="container-foot-bot">
+                    <div class="footer-left ">
+                        Copyright © 2023 Webdigify.
+                    </div>
+                    <div class="footer-right">
+                        <ul>
+                            <li><i class="fa-brands fa-cc-paypal"></i></li>
+                            <li><i class="fa-brands fa-cc-mastercard"></i></li>
+                            <li><i class="fa-brands fa-cc-visa"></i></li>
+                            <li><i class="fa-brands fa-cc-amex"></i></li>
+                        </ul>
+                    </div>
+                </div>
+        
+            </div>
+        </footer>
+    </div>
+</body>
+<script src="public/ts/cart-imgs.js"></script>
+</html>

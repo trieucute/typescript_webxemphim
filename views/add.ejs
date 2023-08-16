@@ -1,0 +1,22 @@
+<form method="post" enctype="multipart/form-data" action="/product/thu">
+    <div>
+      <label for="name">Tên sản phẩm:</label>
+      <input type="text" id="name" name="name" >
+    </div>
+    <div>
+      <label for="description">Mô tả:</label>  
+      <textarea id="description" name="description" ></textarea>
+    </div>
+    <div>
+      <label for="price">Giá:</label>
+      <input type="number" step="0.01" id="price" name="price" >
+    </div>
+    <div>
+      <label for="image">Hình ảnh:</label>
+      <input type="file" id="image" name="image" accept=".jpg,.png,.jpeg" >
+    </div>   <div>
+        <label for="image2">Hình ảnh2:</label>
+        <input type="file" id="image2" name="images" accept=".jpg,.png,.jpeg" >
+      </div>
+    <button type="submit">Đăng ký</button>
+  </form>
